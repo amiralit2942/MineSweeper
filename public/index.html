@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>React App</title>
+  <link rel="preload" as="font" href="webfonts/bahnschrift.ttf" />
+  <style>
+    @font-face {
+      font-family: bahnschrift;
+      font-style: normal;
+      font-weight: normal;
+      src: url('./webfonts/bahnschrift.ttf');
+      /* src: url('%PUBLIC_URL%/webfonts/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'), url('%PUBLIC_URL%/webfonts/IRANSansWeb(FaNum)_Bold.woff') format('woff'), url('%PUBLIC_URL%/webfonts/IRANSansWeb(FaNum)_Bold.ttf') format('truetype'); */
+      */
+    }
+  </style>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'bahnschrift';
+      background-color: #000000;
+    }
+  </style>
+</head>
+
+<script src="../src/phaser/scenes/game.js"></script>
+<script src="../src/phaser/main.js"></script>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <h1 style="font-size: 0px;">DEAL</h1>
+  <div id="root"></div>
+  <div id="game"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <div id="phaser-game">
+  </div>
+
+  <div id="textMessage" style="color:aliceblue;">ENTER YOUR GAME GRID SIZE</div>
+  <input type="number" style="font-size: 24px; text-align: center; font-family: bahnschrift; background-color: gray;" id="inputField" />
+
+</body>
+
+</html>
